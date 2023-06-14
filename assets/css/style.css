@@ -161,8 +161,7 @@ h1 {
 
 table {
     margin-bottom: 8%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
     width: 80%;
     border-collapse: collapse;
     border-radius: 10px;
@@ -174,8 +173,10 @@ table {
 th,
 td {
     padding: 20px;
+    padding-right: 0px;
     border-bottom: 1px solid #ccc;
     text-align: left;
+    width:0.1%;
 }
 
 th {
@@ -184,6 +185,9 @@ th {
     color: #555;
     text-transform: uppercase;
     letter-spacing: 1px;
+    white-space: nowrap;
+    width:0.1%;
+
 }
 
 .emphasis {
@@ -191,21 +195,22 @@ th {
     color: #128376;
 }
 
-.button-container {
-    padding-right: 50px;
+
+input[type=text] {
+    padding: 10px;
+    border: 0;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+    max-width: 80%;
 }
 
-.appointbutton {
-    padding: 9px 25px;
-    background-color: #20C3B0;
-    color: white;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: background-color 0.3s ease 0s;
+input[type=date] {
+    padding: 10px;
+    border: 0;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
 }
 
-.appointbutton:hover {
-    background-color: #128376;
+input[type=time] {
+    padding: 10px;
+    border: 0;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
 }
-
