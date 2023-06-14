@@ -1,13 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
+
+    <link rel="stylesheet" href="..\assets\css\style.css">
+    <script src="assets\js\main.js"></script>
+
 </head>
+
 <body>
-    <h1>Patients</h1>
-    
+
+    <!--HEADER-->
+
+    <header>
+        <a class="logo"><img src="..\assets\logo\logo.svg" alt="logo"></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="../pages/landing_page.html">Home</a></li>
+                <li><a href="../pages/doctor_page.html">Doctors</a></li>
+                <li><a href="../pages/patient_page.html">Patients</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="../pages/signup_page.html">Login / Signup</a>
+    </header>
+
+    <!--HEADER-->
+
+    <!--CONTENT-->
+
+    <h1 style="margin-left: 10%; margin-top: 2%;margin-bottom: 2%;">Current Patients</h1>
+
+
+    <!--PATIENTS-->
+
+    <div class="patient-container">
+        <div class="pt_img">
+            <img class="avatar" src="../assets/images/avatar.png" alt="">
+        </div>
+        <div class="pt_title">
+            <h1>John Basic</h1>
+            <p>Patient</p>
+            <button class="update_cta">Update</button>
+            <button class="delete_cta">Delete</button>
+        </div>
+        <div class="pt_details">
+            <h3 class="pt_att">Age:</h3>
+            <h3 class="pt_att">Gender:</h3>
+            <h3 class="pt_att">Email:</h3>
+            <h3 class="pt_att">Phone:</h3>
+            <h3 class="pt_att">Medical Aid:</h3>
+        </div>
+
+
+
+    </div>
+
+
+    <!--PATIENTS-->
+
+
+
+
+
+    <!--CONTENT-->
+
+
+    <!--FOOTER-->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Schedules</h4>
+                    <ul>
+                        <li><a href="#">Appointments</a></li>
+                        <li><a href="#">Book Now</a></li>
+                        <li><a href="#">Cancel</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--FOOTER-->
+
 </body>
+
 </html>
