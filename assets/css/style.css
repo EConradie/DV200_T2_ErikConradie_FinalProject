@@ -240,6 +240,8 @@ select {
 
 #signupform {
 
+background-repeat: no-repeat;
+background-size: cover;
     background-color: #EEF3F7;
     width: 60%;
     height: 660px;
@@ -247,6 +249,14 @@ select {
     margin-top: 5%;
     margin-bottom: 5%;
     border-radius: 25px;
+
+}
+
+#su_bg {
+    position: absolute;
+    float: right;
+    object-fit: fill;
+
 
 }
 
@@ -329,3 +339,4 @@ label {
 .su_button:hover {
     background-color: #128376;
 }
+
