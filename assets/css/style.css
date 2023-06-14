@@ -295,6 +295,16 @@ h4 {
 
 }
 
+.log_email {
+
+    padding: 4px;
+    padding-right: 50px;
+    width: 99%;
+    padding-bottom: 3%;
+    padding-top: 0px;
+
+}
+
 .select-input {
     padding: 4px;
     padding-right: 0px;

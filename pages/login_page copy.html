@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Login</title>
 
     <link rel="stylesheet" href="..\assets\css\style.css">
     <script src="assets\js\main.js"></script>
@@ -23,10 +23,10 @@
     <!--HEADER-->
 
     <header>
-        <a class="logo"><img src="..\assets\logo\logo.svg" alt="logo"></a>
+        <a href="../pages/landing_page.html" class="logo"><img src="..\assets\logo\logo.svg" alt="logo"></a>
         <nav>
         </nav>
-        <a class="cta" href="#">Login / Signup</a>
+        <a class="cta" href="../pages/signup_page.html">Login / Signup</a>
     </header>
 
     <!--HEADER-->
@@ -37,48 +37,22 @@
 
         <div id="su_titles">
             <h4>START BOOKING NOW</h4>
-            <h1 class="su_h1">Create new account.</h1>
-            <p>Already a member?<a class="su_switch"> Log in.</a></p>
+            <h1 class="su_h1">Log in.</h1>
+            <p>Don't have an account?<a href="../pages/signup_page.html" class="su_switch"> Sign up.</a></p>
 
             <div class="su_inputs"> 
 
-                <div style="float: left;" class='select-input'><label for='role'>Role</label>
-                    <select name="languages" id="role">
-                        <option value="Patient">Patient</option>
-                        <option value="Doctor">Doctor</option>
-                        <option value="Receptionist">Receptionist</option>
-                      </select>
+
+                <div style="float: left;" class='log_email'><label for='email'>Email</label>
+                    <input style="max-width: 100%; width: 100%;" type='text' name='email'></input>
                 </div>
 
-                <div style="float: left;" class='full-input'><label for='name'>Name</label>
-                    <input type='text' name='name'></input>
-                </div>
-
-                <div style="float: right;" class='full-input'><label for='surname'>Surname</label>
-                    <input type='text' name='surname'></input>
-                </div>
-
-                <div style="float: left;" class='full-input'><label for='email'>Email</label>
-                    <input type='text' name='email'></input>
-                </div>
-
-                <div style="float: right;" class='full-input'><label for='dateofbirth'>Date of Birth</label>
-                    <input type='date' name='dateofbirth'></input>
-                </div>
-
-                <div style="float: left;" class='full-input'><label for='phone'>Phone</label>
-                    <input type='text' name='phone'></input>
-                </div>
-
-                <div style="float: right;" class='full-input'><label for='idnumber'>Identification Number</label>
-                    <input type='text' name='idnumber'></input>
-                </div>
 
                 <div style="float: left;" class='full-input'><label for='phone'>Password</label>
                     <input type='password' name='phone'></input>
                 </div>
 
-                <div><button class="su_button">Create account</button></div>
+                <div><button class="su_button">Log In</button></div>
 
 
             </div>
