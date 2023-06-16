@@ -265,7 +265,7 @@ select {
     margin-top: 5%;
     margin-bottom: 5%;
     border-radius: 25px;
-
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 #su_bg {
