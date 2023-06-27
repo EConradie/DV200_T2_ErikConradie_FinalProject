@@ -50,10 +50,63 @@
     <!--APPOINTMENTS-->
 
 
+
+
     <!--APPOINTMENTS-->
+
+    
+    <!-- create form with fields to input new information !-->
+    <form enctype=”multipart/form-data” action="create.php" method="POST">
+
+        <div style="background-image: url('../assets/images/frame.png');" id="add_appointment">
+
+            <div id="su_titles">
+                <h4>START BOOKING NOW</h4>
+                <h1 class="su_h1">Add an Appointment</h1>
+    
+                <div class="su_inputs"> 
+    
+                    <div style="float: left;" class='full-input'><label for='doctor'>Doctor</label>
+                        <input type='text' id='ap_doctor' name='doctor'></input>
+                    </div>
+    
+                    <div style="float: right;" class='full-input'><label for='patient'>Patient</label>
+                        <input type='text' id='ap_patient' name='patient'></input>
+                    </div>
+
+                    <div style="float: left;" class='full-input'><label for='date'>Date</label>
+                        <input type='date' id='ap_date' name='date'></input>
+                    </div>
+    
+                    <div style="float: right;" class='full-input'><label for='time'>Time</label>
+                        <input type='time' id='ap_time' name='time'></input>
+                    </div>
+    
+                    <div style="float: left;" class='full-input'><label for='diagnosis'>Diagnosis</label>
+                        <input type='text' id='ap_diagnosis' name='diagnosis'></input>
+                    </div>
+    
+                    <div style="float: right;" class='full-input'><label for='room'>Room</label>
+                        <input type='number' id='ap_room' name='room'></input>
+                    </div>
+    
+    
+                    <div><button type="submit" class="su_button">Add Appointment</button></div>
+    
+    
+                </div>
+    
+            </div>
+    
+        </div>
+
+
+
+    </form>
 
     <h1 style="margin-left: 10%; margin-top: 2%;margin-bottom: 2%;">Upcoming Appointments</h1>
 
+     <!-- display code from read.php file !-->
     <table>
 
         <tr>
@@ -87,13 +140,13 @@
 
         <!--INPUT ROW-->
         <tr>
-            <td class="emphasis"><input type="date" value="June 14, 2023"></td>
-            <td class="emphasis"><input type="time" value="10:00 AM"></td>
-            <td><input type="text" value="Dr. John Smith"></td>
-            <td><input type="text" value="John Doe"></td>
-            <td><input type="text" value="Headache"></td>
-            <td><input type="text" value="123"></td>
-            <td><input type="text" value="Jane Smith"></td>
+            <td class="emphasis"><input name="date" type="date" value="June 14, 2023"></td>
+            <td class="emphasis"><input name="time" type="time" value="10:00 AM"></td>
+            <td><input name="doctor" type="text" value="Dr. John Smith"></td>
+            <td><input name="patient" type="text" value="John Doe"></td>
+            <td><input name="diagnosis" type="text" value="Headache"></td>
+            <td><input name="room" type="text" value="123"></td>
+            <td><input name="receptionist" type="text" value="Jane Smith"></td>
             <td>
                 <a href="#" class="cta">Save</a>
             </td>

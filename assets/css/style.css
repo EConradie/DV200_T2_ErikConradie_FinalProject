@@ -241,6 +241,13 @@ input[type=password] {
     width: 182%;
 }
 
+input[type=number] {
+    padding: 10px;
+    border: 0;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+    width: 40%;
+}
+
 select {
     padding: 6px;
     border: 0;
@@ -266,6 +273,22 @@ select {
     margin-bottom: 5%;
     border-radius: 25px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#add_appointment {
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #EEF3F7;
+    width: 60%;
+    height: 500px;
+    margin: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+
 }
 
 #su_bg {
@@ -332,6 +355,16 @@ input {
     line-height: 1.2em;
     font-size: 12pt;
     border-radius: 8px;
+}
+
+.dp_inputs {
+    outline: none;
+    border: none;
+    display: block;
+    line-height: 1.2em;
+    font-size: 12pt;
+    border-radius: 8px;
+    margin: 2%;
 }
 
 label {
@@ -413,7 +446,7 @@ label {
     width: 45%;
     height: 50px;
     padding: 9px 25px;
-    margin-top: 10%;
+    margin-top: 5%;
     background-color: #20C3B0;
     color: white;
     border: none;
@@ -431,7 +464,7 @@ label {
     width: 45%;
     height: 50px;
     padding: 9px 25px;
-    margin-top: 10%;
+    margin-top: 5%;
     background-color: #af4412;
     color: white;
     border: none;
