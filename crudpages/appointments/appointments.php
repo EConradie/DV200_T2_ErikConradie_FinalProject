@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 
-    <link rel="stylesheet" href="..\assets\css\style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script src="assets\js\main.js"></script>
 
 </head>
@@ -49,14 +49,8 @@
 
     <!--APPOINTMENTS-->
 
-
-
-
-    <!--APPOINTMENTS-->
-
-    
     <!-- create form with fields to input new information !-->
-    <form enctype=”multipart/form-data” action="create.php" method="POST">
+    <form enctype=”multipart/form-data” action="create_ap.php" method="POST">
 
         <div style="background-image: url('../assets/images/frame.png');" id="add_appointment">
 
@@ -104,10 +98,12 @@
 
     </form>
 
-    <h1 style="margin-left: 10%; margin-top: 2%;margin-bottom: 2%;">Upcoming Appointments</h1>
+    <!--APPOINTMENTS-->
+
+  <h1 style="margin-left: 10%; margin-top: 2%;margin-bottom: 2%;">Upcoming Appointments</h1>
 
      <!-- display code from read.php file !-->
-    <table>
+  <table style="display: inline-block;" class="table">
 
         <tr>
             <th>Date</th>
@@ -121,42 +117,14 @@
             <th></th>
         </tr>
 
-        <tr>
-            <td class="emphasis">June 14, 2023</td>
-            <td class="emphasis">10:00 AM</td>
-            <td>Dr. John Smith</td>
-            <td>John Doe</td>
-            <td>Headache</td>
-            <td>123</td>
-            <td>Jane Smith</td>
-            <td>
-                <a href="#" class="cta">Update</a>
-            </td>
-            <td>
-                <a href="#" class="cta">Delete</a>
-            </td>
+    <tbody>
+      <?php include 'read_ap.php'; ?>
+    </tbody>
 
-        </tr>
+  </table>
 
-        <!--INPUT ROW-->
-        <tr>
-            <td class="emphasis"><input name="date" type="date" value="June 14, 2023"></td>
-            <td class="emphasis"><input name="time" type="time" value="10:00 AM"></td>
-            <td><input name="doctor" type="text" value="Dr. John Smith"></td>
-            <td><input name="patient" type="text" value="John Doe"></td>
-            <td><input name="diagnosis" type="text" value="Headache"></td>
-            <td><input name="room" type="text" value="123"></td>
-            <td><input name="receptionist" type="text" value="Jane Smith"></td>
-            <td>
-                <a href="#" class="cta">Save</a>
-            </td>
-            <td>
-                <a href="#" class="cta">Delete</a>
-            </td>
-        </tr>
+  <!--APPOINTMENTS-->
 
-        <!-- Add more rows for additional appointments -->
-    </table>
 </body>
 
 <!--CONTENT-->

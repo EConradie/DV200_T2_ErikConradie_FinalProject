@@ -14,38 +14,42 @@
         if ($row['id'] == $_GET['id']){
 
             //create input fields for row to be updates with information
-            echo '<form enctype=”multipart/form-data” style class="form-inline m-2" action="update.php" method="POST">';
-            echo '<td><input type="text" class="form-control" name="name" value="'.$row['name'].'"></td>';
-            echo '<td><input type="text" class="form-control" name="surname" value="'.$row['surname'].'"></td>';
-            echo '<td><input type="text" class="form-control" name="idnumber" value="'.$row['idnumber'].'"></td>';
-            echo '<td><input type="date" class="form-control" name="dateofbirth" value="'.$row['dateofbirth'].'"></td>';
-            echo '<td><input type="text" class="form-control" name="gender" value="'.$row['gender'].'"></td>';
-            echo '<td><input type="text" class="form-control" name="race" value="'.$row['race'].'"></td>';
-            echo '<td><input type="file" class="form-control" name="picture" value="'.$row['picture'].'"></td>';
-            echo '<td><input type="text" class="form-control" name="role" value="'.$row['role'].'"></td>';
-            echo '<td><button type="submit" class="btn btn-primary">Save</button></td>';
-            echo '<input type="hidden" name="id" value="'.$row['id'].'">';
-            echo '</form>';
+            echo '<tr>';
+            echo '<td class="emphasis"><input name="date" type="date" value="'.$row['appointment_date'].'"></td>';
+            echo '<td class="emphasis"><input name="time" type="time" value="'.$row['appointment_time'].'"></td>';
+            echo '<td><input name="doctor" type="text" value="'.$row['doctor_id'].'"></td>';
+            echo '<td><input name="patient" type="text" value="'.$row['patient_id'].'"></td>';
+            echo '<td><input name="diagnosis" type="text" value="'.$row['diagnosis'].'"></td>';
+            echo '<td><input name="room" type="text" value="'.$row['room_id'].'"></td>';
+            echo '<td><input name="receptionist" type="text" value="'.$row['receptionist'].'"></td>';
+            echo '<td>';
+            echo '<a type="submit" href="#" class="cta">Save</a>';
+            echo '</td>';
+            echo '<td>';
+            echo '<a href="#" class="cta">Delete</a>';
+            echo '</td>';
+            echo '</tr>';
 
             
         }else{
             
-            //display all information from the selected employee in card format 
+            //display all information from the selected appointment
+            echo '<tr>';
+            echo '<td class="emphasis">'.$row['appointment_date'].'</td>';
+            echo '<td class="emphasis">'.$row['appointment_time'].'</td>';
+            echo '<td>'.$row['doctor_id'].'</td>';
+            echo '<td>'.$row['patient_id'].'</td>';
+            echo '<td>'.$row['diagnosis'].'</td>';
+            echo '<td>'.$row['room_id'].'</td>';
+            echo '<td>'.$row['receptionist'].'</td>';
             echo '<td>';
-            echo '<div class="card" style="width:300px;">';
-            echo '<img class="card-img-top" src="..\ppf\"'.$row['picture'].'" alt="Card image">';
-            echo '<div class="card-body">';
-            echo '<h4 class="card-title">'.$row['name'].' '.$row['surname'].'</h4>';
-            echo '<p class="card-text">'.$row['idnumber'].'</p>';
-            echo '<p style="float:right" class="card-text">'.$row['gender'].'</p>';
-            echo '<p  class="card-text">'.$row['role'].'</p>';
-            echo '<p style="float:right" class="card-text">'.$row['race'].'</p>';
-            echo '<p class="card-text">'.$row['dateofbirth'].'</p>';
-            echo '<a class="btn btn-primary" href="index.php?id=' . $row['id'] . '" role="button">Update</a>';
-            echo '<a style="float:right" class="btn btn-danger" href="delete.php?id=' . $row['id'] . '" role="button">Delete</a>';
-            echo '</div>';
-            echo '</div>';
+            echo '<a class="cta" href="appointments.php?id=' . $row['id'] . '" role="button">Update</a>';
             echo '</td>';
+            echo '<td>';
+            echo '<a class="cta" href="delete_ap.php?id=' . $row['id'] . '" role="button">Delete</a>';
+            echo '</td>';
+            echo '';
+            echo '</tr>';
 
         }
         

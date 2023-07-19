@@ -4,7 +4,7 @@
     $id = $_GET['id'];
 
     //delete selected row
-    $sql = "DELETE FROM appointment WHERE id = $id";
+    $sql = "DELETE FROM appointments WHERE id = $id";
 
     $conn->query($sql);
     $conn->close();
